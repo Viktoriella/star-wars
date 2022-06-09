@@ -7,12 +7,14 @@ import store from '@store/store';
 
 import ThemeProvider from '@context/ThemeProvider';
 import App from '@containers/App';
+import { REPO_NAME } from '@constants/repo';
+
 import '@styles/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={`/${REPO_NAME}/`}>
       <Provider store={store}>
         <ThemeProvider>
           <App />
