@@ -47,6 +47,9 @@ const Header = () => {
                     <NavLink to="/people">People</NavLink>
                 </li>
                 <li>
+                    <NavLink to="/fail">Fail</NavLink>
+                </li>
+                <li>
                     <NavLink to="/not-found">Not found</NavLink>
                 </li>
             </ul>

@@ -10,7 +10,7 @@ import PersonPhoto from '@components/PersonPage/PersonPhoto';
 import PersonInfo from '@components/PersonPage/PersonInfo';
 import PersonLinkBack from '@components/PersonPage/PersonLinkBack';
 
-import UILoading from '@ui/UILoading';
+import UiLoading from '@ui/UiLoading';
 
 import { getApiResource } from '@utils/network';
 import { getPeopleImage } from '@services/getPeopleData';
@@ -80,7 +80,7 @@ const PersonPage = ({ setErrorApi }) => {
 
                     {personInfo && <PersonInfo personInfo={personInfo} />}
                     {personFilms && (
-                        <Suspense fallback={<UILoading />}>
+                        <Suspense fallback={<UiLoading />}>
                             <PersonFilms personFilms={personFilms} />
                         </Suspense>
                     )}

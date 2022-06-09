@@ -1,11 +1,11 @@
-import UILoading from "./UILoading";
+import UiLoading from "./UiLoading";
 
 export default {
-    title: 'Ui-Kit/UILoading',
-    component: UILoading
+    title: 'Ui-Kit/UiLoading',
+    component: UiLoading
 }
 
-const Template = (args) => <UILoading {...args} />;
+const Template = (args) => <UiLoading {...args} />;
 
 const props = {
     theme: 'black',

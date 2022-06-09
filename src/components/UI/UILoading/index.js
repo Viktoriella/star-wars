@@ -1,1 +1,1 @@
-export { default } from './UILoading';
+export { default } from './UiLoading';

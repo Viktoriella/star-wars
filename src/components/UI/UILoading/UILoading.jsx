@@ -6,9 +6,9 @@ import loaderWhite from './img/loader-white.svg';
 import loaderBlack from './img/loader-black.svg';
 import loaderBlue from './img/loader-blue.svg';
 
-import styles from './UILoading.module.css';
+import styles from './UiLoading.module.css';
 
-const UILoading = ({
+const UiLoading = ({
     theme='white',
     isShadow=true,
     classes
@@ -36,10 +36,10 @@ const UILoading = ({
     )
 }
 
-UILoading.propTypes = {
+UiLoading.propTypes = {
     theme: PropTypes.string,
     isShadow: PropTypes.bool,
     classes: PropTypes.string
 }
 
-export default UILoading;
+export default UiLoading;
